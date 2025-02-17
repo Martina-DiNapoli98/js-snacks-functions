@@ -4,9 +4,32 @@ const word = 'javascript';
 
 
 // Dichiara la funzione qui.
+/* function quanteVocali(word){
+    let vocali = 0;
+    for(let i = 0; i < word.length; i++){
+        lettere = word[i]
+        if(lettere === "a"|| lettere === "e" || lettere === "i" || lettere === "o" || lettere === "u"){
+            vocali++
+        }
+    }
+    return vocali
+} */
+
+const quanteVocali = word =>{
+    let vocali = 0;
+    for(let i = 0; i < word.length; i++){
+        lettere = word[i]
+        if(lettere === "a"|| lettere === "e" || lettere === "i" || lettere === "o" || lettere === "u"){
+            vocali++
+        }
+    }
+    return vocali
+}
 
 
 // Invoca la funzione qui e stampa il risultato in console
+const numeroVocali = quanteVocali(word);
+console.log(`ci sono ${numeroVocali} vocali`);
 
 
 
